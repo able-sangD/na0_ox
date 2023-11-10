@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> O</title>
+    <style>
+        body {
+           background-color: rgb(255, 255, 255);
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+           height: 100vh;
+        }
+        h1 {
+            font-size: 35px;
+            color: rgb(255, 0, 0);
+            text-align: center;
+            padding: 10px;
+            -webkit-text-stroke: 0.5px white;
+        }
+
+        .button-container {
+            margin-top: 20px;
+        }
+
+        .button {
+            padding: 15px 30px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>틀렸습니다. 날개가 있는 새 중에 가장 빠른 새는 송골매입니다.</h1>
+    <div class="button-container">
+        <button class="button" id="Button1" onclick="openNewWindow('index5.html')">다시</button>
+    </div>
+    
+    <script>
+        function openNewWindow(url) {
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> X</title>
+    <style>
+        body {
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        h1 {
+            font-size: 75px;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            -webkit-text-stroke: 0.5px white;
+        }
+        h2 {
+            font-size: 35px;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            -webkit-text-stroke: 0.5px white;
+        }
+
+        .button-container {
+            margin-top: 20px;
+        }
+
+        .button {
+            padding: 15px 30px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>정답입니다.</h1>
+    <h2>이상 여기까지 O X 퀴즈였습니다✌('ω')✌</h2>
+    <div class="button-container">
+        <button class="button" id="Button1" onclick="openNewWindow('index.html')">처음으로</button>
+    </div>
+
+    <script>
+        function openNewWindow(url) {
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>

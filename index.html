@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>O X 퀴즈</title>
+    <style>
+        body {
+            background-image: url('검은 배경.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        h1 {
+            font-size: 75px;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            -webkit-text-stroke: 0.5px white;
+        }
+        h2 {
+            font-size: 35px;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            -webkit-text-stroke: 0.5px white;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .button {
+            padding: 15px 30px;
+            margin: 10px;
+            background-color: white;
+            color: black;
+            border: none;
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>O X 퀴즈~!</h1>
+    <h2>개미는 63빌딩에서 떨어지면 죽는다.</h2>
+    <div class="button-container">
+        <button class="button" id="Button1" onclick="openNewWindow('index1.html')">O</button>
+        <button class="button" id="Button2" onclick="openNewWindow('index2.html')">X</button>
+    </div>
+
+    <script>
+        function openNewWindow(url) {
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>
